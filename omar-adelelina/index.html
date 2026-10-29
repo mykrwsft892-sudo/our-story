@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omar & Adelina ❤️ Our Story</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap');
+
+:root {
+  --pink: #ff7597;
+  --deep-pink: #d34e7c;
+  --light-pink: #ffe5ed;
+  --dark: #241722;
+  --white: #fffafc;
+  --gold: #e6b980;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #fff7fa, #ffe6ee, #fff9fb);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+button { font-family: inherit; cursor: pointer; }
+
+section { padding: 85px 20px; position: relative; }
+
+.container { max-width: 1000px; margin: auto; }
+
+/* ============ HERO ============ */
+.hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: 35px 20px;
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(circle at top left, #ffd0df, transparent 45%),
+    radial-gradient(circle at bottom right, #ffc1d6, transparent 40%),
+    linear-gradient(135deg, #fff7fa, #ffe6ee);
+}
+
+.hero-content { max-width: 850px; z-index: 2; }
+
+.small-title {
+  letter-spacing: 5px; text-transform: uppercase;
+  color: #c34d76; font-size: 12px; margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(55px, 10vw, 110px);
+  line-height: 1.1; color: #bd426d; margin-bottom: 25px;
+}
+
+.hero h1 span {
+  display: block; color: #e96f96;
+  animation: heartbeat 1.5s infinite;
+  display: inline-block;
+}
+
+.hero p {
+  font-size: 16px; line-height: 1.9;
+  max-width: 620px; margin: 0 auto 30px; color: #684451;
+}
+
+.heart {
+  color: #e94f80; display: inline-block;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.25); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.15); }
+}
+
+.main-button {
+  border: none; border-radius: 50px;
+  padding: 16px 34px;
+  background: linear-gradient(135deg, #f56f98, #d94878);
+  color: white; font-size: 15px; font-weight: 600;
+  box-shadow: 0 10px 30px #e96f9640;
+  transition: .3s;
+}
+
+.main-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 18px 40px #e96f9660;
+}
+
+.scroll-note {
+  margin-top: 35px; font-size: 12px;
+  color: #a56c80; animation: bounce 2s infinite;
+}
+
+@keyframes bounce { 50% { transform: translateY(7px); } }
+
+/* ============ SECTION HEADINGS ============ */
+.section-heading { text-align: center; margin-bottom: 55px; }
+
+.section-heading .eyebrow {
+  color: #c34d76; letter-spacing: 4px;
+  font-size: 11px; text-transform: uppercase; margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(42px, 7vw, 68px);
+  color: #b9436c; margin-bottom: 12px;
+}
+
+.section-heading p {
+  color: #856674; font-size: 14px; line-height: 1.8;
+}
+
+/* ============ STORY CARDS ============ */
+.story-card {
+  background: #ffffffc9;
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  padding: 40px 35px;
+  margin-bottom: 35px;
+  box-shadow: 0 15px 45px #c94b7610;
+  transition: .4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.story-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 5px; height: 100%;
+  background: linear-gradient(180deg, #f56f98, #d94878);
+  border-radius: 5px 0 0 5px;
+}
+
+.story-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px #c94b7625;
+}
+
+.story-number {
+  font-family: 'Dancing Script', cursive;
+  font-size: 55px; color: #f1b6ca;
+  line-height: 1; margin-bottom: 10px;
+}
+
+.story-text .number {
+  color: #d86a8d; letter-spacing: 3px;
+  font-size: 11px; text-transform: uppercase; margin-bottom: 10px;
+}
+
+.story-text h3 {
+  font-family: 'Dancing Script', cursive;
+  color: #b9436c; font-size: 36px; margin-bottom: 20px;
+}
+
+.story-text p {
+  color: #725563; font-size: 15px;
+  line-height: 2.1; margin-bottom: 15px;
+}
+
+.story-text p:last-child { margin-bottom: 0; }
+
+/* ============ QUOTE ============ */
+.quote-section {
+  background: linear-gradient(135deg, #b9436c, #d34e7c);
+  color: white; text-align: center;
+  padding: 90px 25px; position: relative; overflow: hidden;
+}
+
+.quote-section::before,
+.quote-section::after {
+  content: '❝';
+  position: absolute; font-size: 200px;
+  color: #ffffff15; font-family: serif;
+}
+
+.quote-section::before { top: -30px; left: 20px; }
+.quote-section::after { content: '❞'; bottom: -100px; right: 20px; }
+
+.quote-section .quote {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(32px, 6vw, 60px);
+  max-width: 850px; margin: auto;
+  line-height: 1.5; position: relative; z-index: 2;
+}
+
+.quote-section p {
+  margin-top: 25px; color: #ffe3ec;
+  font-size: 14px; position: relative; z-index: 2;
+}
+
+/* ============ DISTANCE ============ */
+.distance-box {
+  text-align: center; background: white;
+  padding: 50px 30px; border-radius: 28px;
+  box-shadow: 0 15px 45px #c94b7610;
+  border: 1px solid #ffe0ea;
+}
+
+.distance-icons {
+  font-size: clamp(30px, 6vw, 55px);
+  margin: 30px 0; animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.distance-box h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px; color: #b9436c; margin-bottom: 20px;
+}
+
+.distance-box p {
+  color: #725563; line-height: 2.1;
+  font-size: 15px; max-width: 700px; margin: auto auto 15px;
+}
+
+/* ============ HEART LINKS SECTION ============ */
+.heart-links-section {
+  text-align: center;
+  background:
+    radial-gradient(circle at top left, #ffd0df, transparent 45%),
+    radial-gradient(circle at bottom right, #ffc1d6, transparent 40%),
+    linear-gradient(135deg, #fff7fa, #ffe6ee);
+}
+
+.big-heart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* القلب الكبير */
+.heart-shape {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  background: linear-gradient(135deg, #f56f98, #c83e70);
+  border-radius: 50% 0 50% 50%;
+  transform: rotate(-45deg);
+  box-shadow: 0 25px 60px #c83e7050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: heartPulse 3s ease-in-out infinite;
+}
+
+.heart-shape::before,
+.heart-shape::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f56f98, #c83e70);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.heart-shape::before { top: -50%; left: 0; }
+.heart-shape::after { right: -50%; top: 0; }
+
+@keyframes heartPulse {
+  0%, 100% { transform: rotate(-45deg) scale(1); }
+  50% { transform: rotate(-45deg) scale(1.04); }
+}
+
+/* البطاقات جوه القلب */
+.heart-card {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  background: #ffffff25;
+  backdrop-filter: blur(6px);
+  border: 2px solid #ffffff60;
+  border-radius: 20px;
+  padding: 16px 10px;
+  width: 115px;
+  transition: .35s;
+  z-index: 5;
+}
+
+.heart-adelina {
+  top: 26%;
+  left: 10%;
+  transform: rotate(45deg) translate(-10px, -10px);
+}
+
+.heart-omar {
+  bottom: 20%;
+  right: 10%;
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.heart-card:hover {
+  background: #ffffff45;
+  border-color: #fff;
+  box-shadow: 0 10px 30px #00000030;
+}
+
+.heart-adelina:hover {
+  transform: rotate(45deg) translate(-10px, -10px) scale(1.08);
+}
+
+.heart-omar:hover {
+  transform: rotate(45deg) translate(10px, 10px) scale(1.08);
+}
+
+.heart-inner { text-align: center; }
+
+.heart-icon {
+  font-size: 26px;
+  margin-bottom: 4px;
+  animation: heartbeat 1.5s infinite;
+}
+
+.heart-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  text-shadow: 0 2px 5px #00000030;
+}
+
+.heart-username {
+  font-size: 10px;
+  opacity: .95;
+  margin-bottom: 8px;
+  letter-spacing: .3px;
+}
+
+.heart-ig-icon {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  opacity: .9;
+}
+
+/* القلب الوسط */
+.heart-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  text-align: center;
+  color: white;
+  z-index: 6;
+  animation: centerGlow 2s ease-in-out infinite;
+}
+
+@keyframes centerGlow {
+  0%, 100% { filter: drop-shadow(0 0 8px #fff8); }
+  50% { filter: drop-shadow(0 0 20px #fff); }
+}
+
+.heart-center-emoji {
+  font-size: 30px;
+  margin-bottom: 5px;
+  animation: heartbeat 1.5s infinite;
+}
+
+.heart-center-text {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.4;
+  text-shadow: 0 2px 8px #00000050;
+}
+
+/* الكابشن */
+.heart-caption {
+  font-family: 'Cairo', 'Dancing Script', cursive;
+  font-size: clamp(24px, 4vw, 38px);
+  font-weight: 700;
+  color: #b9436c;
+  text-align: center;
+  margin-top: 40px;
+  animation: heartbeat 2s infinite;
+  direction: rtl;
+}
+
+/* ============ FUTURE ============ */
+.future {
+  text-align: center;
+  background:
+    radial-gradient(circle at top right, #ffd4e1, transparent 40%),
+    linear-gradient(135deg, #fff5f8, #ffe4ed);
+}
+
+.future-card {
+  max-width: 800px; margin: auto;
+  background: #ffffffdb;
+  border-radius: 30px; padding: 55px 40px;
+  box-shadow: 0 15px 45px #c94b7615;
+}
+
+.future-card h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(42px, 7vw, 65px);
+  color: #b9436c; margin-bottom: 25px;
+}
+
+.future-card p {
+  color: #725563; line-height: 2.2;
+  font-size: 15px; margin-bottom: 20px;
+}
+
+.future-card strong { color: #d34e7c; }
+
+.future-hearts {
+  font-size: 32px; margin-top: 30px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* ============ PROPOSAL ============ */
+.proposal {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; position: relative; overflow: hidden;
+  background: linear-gradient(135deg, #fff5f8, #ffdce7, #fff5f8);
+}
+
+.proposal-content { max-width: 850px; position: relative; z-index: 2; }
+
+.proposal .big-heart {
+  font-size: 85px; margin-bottom: 25px;
+  animation: heartbeat 1.5s infinite;
+}
+
+.proposal h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(48px, 9vw, 90px);
+  color: #b9436c; margin-bottom: 30px;
+  line-height: 1.1;
+}
+
+.proposal p {
+  max-width: 720px; margin: 0 auto 20px;
+  line-height: 2.1; font-size: 15px; color: #725563;
+}
+
+.proposal .question {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(32px, 6vw, 52px);
+  color: #d34e7c; margin: 40px auto;
+  padding: 30px 20px;
+  background: #ffffffb0;
+  border-radius: 25px;
+  border: 2px dashed #f1b6ca;
+}
+
+.button-group {
+  display: flex; flex-wrap: wrap;
+  justify-content: center; gap: 18px; margin-top: 35px;
+}
+
+.yes-button, .time-button {
+  border: none; border-radius: 50px;
+  padding: 18px 38px; font-size: 15px;
+  font-weight: 600; transition: .3s;
+}
+
+.yes-button {
+  color: white;
+  background: linear-gradient(135deg, #ef6791, #c83e70);
+  box-shadow: 0 12px 35px #c83e7040;
+}
+
+.yes-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 18px 45px #c83e7060;
+}
+
+.time-button {
+  color: #b9436c; background: white;
+  border: 2px solid #f1b6ca;
+}
+
+.time-button:hover {
+  transform: translateY(-5px);
+  background: #fff5f8;
+}
+
+.answer-message {
+  display: none; background: white;
+  padding: 40px 30px; border-radius: 28px;
+  margin-top: 40px;
+  box-shadow: 0 20px 55px #c94b7620;
+  animation: appear .6s ease;
+  border: 1px solid #ffe0ea;
+}
+
+.answer-message h3 {
+  font-family: 'Dancing Script', cursive;
+  color: #b9436c; font-size: 44px; margin-bottom: 18px;
+}
+
+.answer-message p { font-size: 15px; line-height: 2; }
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ FOOTER ============ */
+footer {
+  padding: 45px 20px; text-align: center;
+  color: #9c6278; font-size: 13px; line-height: 2.2;
+  background: #fff8fb; border-top: 1px solid #ffe0ea;
+}
+
+footer .signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px; color: #c34d76;
+  margin-top: 15px; display: block;
+}
+
+/* ============ FLOATING HEARTS ============ */
+.floating-heart {
+  position: fixed; bottom: -30px;
+  color: #e96f96; pointer-events: none; z-index: 100;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* ============ FADE IN ============ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============ MOBILE ============ */
+@media (max-width: 700px) {
+  section { padding: 65px 16px; }
+  .story-card { padding: 30px 22px; }
+  .story-text h3 { font-size: 30px; }
+  .story-number { font-size: 42px; }
+  .hero p { font-size: 14px; }
+  .future-card { padding: 35px 22px; }
+  .proposal .question { padding: 22px 15px; }
+  .yes-button, .time-button {
+    padding: 15px 28px; font-size: 14px; width: 100%;
+  }
+  .heart-shape {
+    width: 270px;
+    height: 270px;
+  }
+  .heart-card {
+    width: 92px;
+    padding: 12px 8px;
+  }
+  .heart-name { font-size: 17px; }
+  .heart-username { font-size: 8px; }
+  .heart-icon { font-size: 20px; }
+  .heart-ig-icon svg { width: 16px; height: 16px; }
+  .heart-center-text { font-size: 11px; }
+  .heart-center-emoji { font-size: 22px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="small-title">A little website, a big feeling</div>
+
+    <h1>
+      Omar
+      <span>♥</span>
+      Adelina
+    </h1>
+
+    <p>
+      Some people enter our lives unexpectedly and somehow make ordinary moments
+      unforgettable. This is the story of how I met you, Adelina,
+      and why that little adventure in Sharm El Sheikh means so much to me.
+    </p>
+
+    <button class="main-button" onclick="document.getElementById('story').scrollIntoView()">
+      Open Our Story ❤️
+    </button>
+
+    <div class="scroll-note">SCROLL DOWN TO READ OUR STORY ↓</div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section id="story">
+  <div class="container">
+
+    <div class="section-heading fade-in">
+      <div class="eyebrow">Chapter One</div>
+      <h2>How It All Began</h2>
+      <p>September 22, 2026 — the day a beautiful stranger became someone special.</p>
+    </div>
+
+    <div class="story-card fade-in">
+      <div class="story-number">01</div>
+      <div class="story-text">
+        <div class="number">22 SEPTEMBER 2026</div>
+        <h3>The Girl I Couldn't Forget</h3>
+        <p>
+          We met in Sharm El Sheikh during the Safari 5-in-1 trip.
+          You were staying at Albatros Golf with your friend Marta.
+          I had met many people before, but there was something different about you.
+        </p>
+        <p>
+          You were so beautiful, so kind, and there was something almost magical
+          about the way you carried yourself. It felt like you cast a spell on me,
+          and from that moment, I couldn't stop thinking about you.
+        </p>
+        <p>
+          I didn't know what would happen next. I only knew that I wanted
+          to know you better — even if it was just for one more conversation.
+        </p>
+      </div>
+    </div>
+
+    <div class="story-card fade-in">
+      <div class="story-number">02</div>
+      <div class="story-text">
+        <div class="number">A LITTLE DESERT MEMORY</div>
+        <h3>Tea, Bread & A Photo</h3>
+        <p>
+          At the Bedouin tent, we shared tea and fresh Bedouin bread,
+          and I got to take a photo with you. It might have looked like
+          an ordinary moment to anyone else, but for me, it became
+          one of those little memories I wanted to keep forever.
+        </p>
+        <p>
+          The desert was quiet, the lights were warm, and you were smiling.
+          Sometimes, the smallest moments become the ones we remember the most.
+        </p>
+      </div>
+    </div>
+
+    <div class="story-card fade-in">
+      <div class="story-number">03</div>
+      <div class="story-text">
+        <div class="number">THE FUNNY LITTLE MOMENT</div>
+        <h3>The Power Bank & The Shisha</h3>
+        <p>
+          At dinner, a Turkish girl needed a power bank.
+          You asked Marta to give it to me, and when you saw me
+          hand it to the girl, you thought it was mine.
+        </p>
+        <p>
+          Later, when the shisha seller gave you a price you didn't like,
+          you came to me and asked whether I would give you the shisha
+          or take the power bank!
+        </p>
+        <p>
+          I told you that wasn't very nice. But when I noticed
+          the regret in your eyes, I didn't want you to feel bad,
+          so I bought you the shisha and gave you money to pay for it.
+        </p>
+        <p>
+          Then we sat together, talked a little, and I gave you the power bank back.
+          A funny misunderstanding became one of my favorite memories of us.
+        </p>
+      </div>
+    </div>
+
+    <div class="story-card fade-in">
+      <div class="story-number">04</div>
+      <div class="story-text">
+        <div class="number">UNDER THE STARS</div>
+        <h3>And Then You Became "Lina"</h3>
+        <p>
+          At the end of the trip, I asked for your Instagram, and you gave it to me.
+          Then we went to look at the stars. The sky was beautiful,
+          but honestly, my thoughts were somewhere else — they were all on you.
+        </p>
+        <p>
+          I had trouble saying your name, and you told me I could call you
+          "Lina" or "Rouhi" in Arabic. From that night, you weren't just Adelina anymore.
+          You became my Lina.
+        </p>
+        <p>
+          When it was time for you to leave on the hotel bus,
+          we said goodbye. I didn't know that this was only the beginning of our story.
+        </p>
+      </div>
+    </div>
+
+    <div class="story-card fade-in">
+      <div class="story-number">05</div>
+      <div class="story-text">
+        <div class="number">SEPTEMBER 23, 2026</div>
+        <h3>The Surprise You Said Yes To</h3>
+        <p>
+          After midnight, I sent you the photos from the previous day.
+          You asked me to find a good and affordable place for snorkeling.
+          I told you I had a nice surprise: snorkeling and parasailing for only €25.
+        </p>
+        <p>
+          You agreed right away — but you insisted that I come too.
+          I was sleepy, but how could I say no to you? You even kept calling me
+          in the morning to wake me up, because you knew I wouldn't get up on my own.
+        </p>
+        <p>
+          We met near Pizza Hut, went snorkeling and parasailing,
+          and made a whole new set of memories. I was happy that you wanted me
+          there with you. That day meant more to me than you probably know.
+        </p>
+      </div>
+    </div>
+
+    <div class="story-card fade-in">
+      <div class="story-number">06</div>
+      <div class="story-text">
+        <div class="number">A MEMORY THAT MAKES ME SMILE</div>
+        <h3>Your Two Injured Feet 😂❤️</h3>
+        <p>
+          When you came out of the water, coral had cut your foot.
+          I helped you sit down and asked my friend to get some treatment.
+          I treated your foot and tried to help you feel better.
+        </p>
+        <p>
+          Then, just three minutes later, I discovered that your other foot
+          was injured too! So, of course, I had to take care of that one as well.
+          I still smile every time I remember that little adventure.
+        </p>
+        <p>
+          Afterward, we got ice cream, and I took you back to your hotel.
+          I was glad I could help you, even in such a small way.
+        </p>
+      </div>
+    </div>
+
+    <div class="story-card fade-in">
+      <div class="story-number">07</div>
+      <div class="story-text">
+        <div class="number">THE LAST HUG IN SHARM</div>
+        <h3>A Goodbye I Didn't Want</h3>
+        <p>
+          Before you left for your flight to Spain, I hugged Marta,
+          then hugged you and kissed your forehead. I knew you were leaving that night,
+          and I didn't know when I would see you again.
+        </p>
+        <p>
+          That hug became our last goodbye in Egypt. But even after you left,
+          our story didn't end. You went back to Spain, and I stayed in Egypt.
+          Somehow, we kept talking, sharing our days, and getting closer
+          despite the distance.
+        </p>
+        <p>
+          And every day since then, I've realized more and more
+          how much you mean to me.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="quote-section">
+  <div class="quote">
+    "I didn't plan to meet you. I didn't plan to care this much.
+    But I'm really glad that I did."
+  </div>
+  <p>— Omar, to Adelina ❤️</p>
+</section>
+
+<!-- ============ DISTANCE ============ -->
+<section>
+  <div class="container">
+    <div class="section-heading fade-in">
+      <div class="eyebrow">Two Countries, One Story</div>
+      <h2>Egypt 🇪🇬 & Spain 🇪🇸</h2>
+      <p>Different places, different languages, but a connection worth discovering.</p>
+    </div>
+
+    <div class="distance-box fade-in">
+      <div class="distance-icons">🇪🇬 &nbsp; ✈️ &nbsp; ❤️ &nbsp; ✈️ &nbsp; 🇪🇸</div>
+      <h3>Distance Is Not The Whole Story</h3>
+      <p>
+        I know that we live far away from each other. I know that we have
+        different languages, different routines, and a lot of things to figure out.
+      </p>
+      <p>
+        But I want to learn, to understand you better, and to keep showing you
+        through my actions that you matter to me. I don't expect everything
+        to be easy. I just hope that, if we both want this, we can face the
+        difficulties together — one day at a time.
+      </p>
+      <p>
+        Distance is just a number. What matters is what we choose to do with it.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HEART LINKS ============ -->
+<section class="heart-links-section">
+  <div class="container">
+    <div class="section-heading fade-in">
+      <div class="eyebrow">Two Hearts, One Story</div>
+      <h2>Our Little Corner 💕</h2>
+      <p>اضغط على أي قلب عشان تفتح حساب الإنستجرام</p>
+    </div>
+
+    <div class="big-heart-container fade-in">
+      <div class="heart-shape">
+
+        <a href="https://www.instagram.com/adelina.ivn"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="heart-card heart-adelina">
+          <div class="heart-inner">
+            <div class="heart-icon">💗</div>
+            <div class="heart-name">Adelina</div>
+            <div class="heart-username">@adelina.ivn</div>
+            <div class="heart-ig-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.2-8.3a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <div class="heart-center">
+          <div class="heart-center-emoji">❤️</div>
+          <div class="heart-center-text">شريكة<br>حياتي<br>حتى<br>الممات</div>
+        </div>
+
+        <a href="https://www.instagram.com/3mora___1"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="heart-card heart-omar">
+          <div class="heart-inner">
+            <div class="heart-icon">💙</div>
+            <div class="heart-name">Omar</div>
+            <div class="heart-username">@3mora___1</div>
+            <div class="heart-ig-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.2-8.3a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <p class="heart-caption fade-in">
+      💍 Adelina — شريكة حياتي حتى الممات 💍
+    </p>
+
+  </div>
+</section>
+
+<!-- ============ FUTURE ============ -->
+<section class="future">
+  <div class="container">
+    <div class="section-heading fade-in">
+      <div class="eyebrow">A Dream From My Heart</div>
+      <h2>What I Hope For</h2>
+    </div>
+
+    <div class="future-card fade-in">
+      <h3>Maybe One Day… ❤️</h3>
+
+      <p>
+        Maybe one day, we won't have to say goodnight through a phone.
+        Maybe one day, I will be able to look into your eyes
+        instead of looking at your photos.
+      </p>
+
+      <p>
+        Maybe one day, we will travel together, laugh about our memories,
+        support each other through difficult days, and celebrate
+        every little victory side by side.
+      </p>
+
+      <p>
+        I dream of a future where we can build a home full of love,
+        respect, laughter, and peace. A future where we can face the world
+        together and make each other feel safe and understood.
+      </p>
+
+      <p>
+        And sometimes, when I imagine that future, I imagine two little names too:
+        <strong>Noah and Sarah.</strong>
+      </p>
+
+      <p>
+        But I know a dream is only a dream until two people choose it together.
+        I don't want to decide our future for you. I want to discover it with you,
+        if your heart wants the same thing.
+      </p>
+
+      <div class="future-hearts">❤️ 🏡 👩‍❤️‍👨 👶🏻 👶🏻 ❤️</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROPOSAL ============ -->
+<section class="proposal" id="proposal">
+  <div class="container proposal-content">
+
+    <div class="big-heart">💌</div>
+
+    <div class="small-title">One Last Thing, Adelina</div>
+
+    <h2>This Is My Question For You</h2>
+
+    <p>
+      You came into my life as a beautiful girl I met during a safari trip.
+      I never expected that a few days in Sharm El Sheikh could become
+      the beginning of something so meaningful to me.
+    </p>
+
+    <p>
+      I want to keep learning about you, listening to you, making you laugh,
+      supporting you, and becoming a better man. I want my actions
+      to match my words.
+    </p>
+
+    <p>
+      I can't promise that life will always be easy. But I can promise
+      that, if we choose each other, I will do my best to be honest with you,
+      respect your feelings, and work through difficulties with you.
+    </p>
+
+    <div class="question">
+      Adelina, will you be my girlfriend
+      and let us discover our future together? ❤️
+    </div>
+
+    <p>
+      And maybe, if life takes us there and we both keep choosing each other,
+      one day you could become my wife, the mother of Noah and Sarah,
+      and the person I get to share my life with.
+    </p>
+
+    <p>
+      There is no pressure, my Lina. I want your honest answer,
+      whatever it is. Your happiness and your choice matter to me.
+    </p>
+
+    <div class="button-group">
+      <button class="yes-button" onclick="showAnswer('yes')">
+        YES, MY OMAR ❤️
+      </button>
+
+      <button class="time-button" onclick="showAnswer('time')">
+        I NEED A LITTLE TIME 💌
+      </button>
+    </div>
+
+    <div class="answer-message" id="answerMessage">
+      <h3 id="answerTitle"></h3>
+      <p id="answerText"></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  Made with love by Omar, especially for Adelina ❤️
+  <br>
+  From our first safari to all the beautiful memories still waiting for us.
+  <span class="signature">You will always be my Lina.</span>
+</footer>
+
+<script>
+function showAnswer(answer) {
+  const box = document.getElementById("answerMessage");
+  const title = document.getElementById("answerTitle");
+  const text = document.getElementById("answerText");
+
+  box.style.display = "block";
+
+  if (answer === "yes") {
+    title.textContent = "You Made Me So Happy! ❤️";
+    text.textContent =
+      "I don't even know how to explain how happy I feel right now. " +
+      "Thank you for choosing to give us a chance, Lina. " +
+      "Let's take our time, keep learning about each other, " +
+      "and build something beautiful together. " +
+      "I can't wait to make more memories with you. I love you, my Lina! ❤️";
+    createHearts(50);
+  } else {
+    title.textContent = "Take All The Time You Need 💗";
+    text.textContent =
+      "Thank you for being honest with me, Lina. " +
+      "I don't want you to feel pressured or rushed. " +
+      "What matters to me is that you feel comfortable being honest with me. " +
+      "Whatever you decide, I'm grateful that our paths crossed.";
+    createHearts(15);
+  }
+
+  box.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function createHearts(amount = 1) {
+  for (let i = 0; i < amount; i++) {
+    setTimeout(() => {
+      const heart = document.createElement("div");
+      heart.className = "floating-heart";
+      heart.textContent = ["❤️", "💕", "💗", "💖", "💘", "🌹", "✨"][
+        Math.floor(Math.random() * 7)
+      ];
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = 15 + Math.random() * 25 + "px";
+      heart.style.animationDuration = 3 + Math.random() * 4 + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 7500);
+    }, i * 70);
+  }
+}
+
+setInterval(() => {
+  if (Math.random() > 0.5) createHearts(1);
+}, 2200);
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+</script>
+
+</body>
+</html>
